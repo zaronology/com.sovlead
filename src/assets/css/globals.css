@@ -1,0 +1,58 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+@theme {
+  /* Fonts */
+  --font-sans: var(--font-inter);
+  --font-serif: var(--font-lora);
+  --font-authority: var(--font-cinzel);
+
+  /* Colors */
+  --color-white: #f4f1ed;
+  --color-white-soft: #f8f6f3;
+  --color-white-air: #fbfaf8;
+  --color-gold: #c6a75f;
+  --color-rust: #a74a26;
+  --color-blue: #0b1a2f;
+  --color-charcoal: #1f2933;
+  --color-f-rust: #541406;
+  --color-success: #4bb543;
+  --color-error: #ff0000;
+  --color-pure: #ffffff;
+}
+/* Customizing the Typography plugin in v4 */
+@utility prose-sovereign {
+  @apply prose prose-gray max-w-none;
+
+  --tw-prose-links: var(--color-gold);
+  --tw-prose-quotes: var(--color-gray-700);
+  --tw-prose-quote-borders: var(--color-gold);
+
+  & h1,
+  h2,
+  h3 {
+    @apply font-authority tracking-tight text-gray-900;
+  }
+
+  & a {
+    @apply no-underline transition-colors;
+    &:hover {
+      @apply text-rust underline;
+    }
+  }
+
+  & blockquote {
+    @apply bg-gray-50 py-1 px-6 rounded-r-lg italic;
+  }
+}
+
+body {
+  background-color: var(--color-white);
+}
+
+.hero-box {
+  top: auto;
+  bottom: -100px;
+  background: var(--color-white);
+  color: var(--color-blue);
+  border-radius: 4px;
+}
