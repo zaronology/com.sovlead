@@ -100,12 +100,6 @@ export default function LeadershipStats() {
       <div className="w-full bg-blue py-20 lg:py-32">
         <div className="mx-auto container px-6">
           <div className="max-w-5xl mx-auto">
-            <div className="text-center mb-16">
-              <h3 className="font-authority capitalize text-3xl md:text-5xl font-semibold text-gold border-b border-rust inline-block pb-2">
-                The cold hard data
-              </h3>
-            </div>
-
             <ul className="grid grid-cols-1 md:grid-cols-2 gap-y-8 gap-x-16">
               {checklist.map((item, index) => (
                 <li key={index} className="flex items-start gap-4 text-white">
