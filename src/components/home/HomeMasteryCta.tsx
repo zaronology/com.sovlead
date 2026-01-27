@@ -1,70 +1,110 @@
 import React from "react";
-import Image from "next/image";
-import theFoundryLogo from "@/assets/images/fd-logo-horizontial-w.png";
-export default function FoundrySections() {
+
+export default function HomeFinalCTA() {
   return (
     <section className="relative w-full bg-white-soft py-20 lg:py-32 overflow-hidden">
-      {/* THE GLOBAL CONTAINER: Ensuring horizontal consistency */}
-      <div className="relative z-10 mx-auto container px-6 ">
-        <div className="flex flex-col w-full lg:flex-row gap-30">
-          {/* LEFT SIDE: Headline & Lead */}
-          <div className="w-full lg:w-6/12 text-blue ">
-            <div className="border-b-4 pb-6 mb-8 border-f-rust">
-              <h2 className="font-authority text-7xl font-bold">
-                The
-                <br />
-                Foundry
-              </h2>
-            </div>
-            <p className="text-xl md:text-2xl font-serif italic leading-tight mb-4">
-              This work doesn't happen in theory.
-            </p>
-            <p className="text-xl md:text-2xl font-serif  leading-tight mb-4">
-              <b className="text-rust italic">Orientation</b>&nbsp;under
-              pressure &nbsp;isn't something you learn by reading about it.
-            </p>
-            <p className="text-xl md:text-2xl mb-4">
-              <b className="text-rust italic">Authority</b> isn't built by
-              collecting frameworks or optimizing your calendar.
-            </p>
-            <p className="text-xl md:text-2xl">
-              It's forged in the arena. Inside the decisions you carry, the
-              boundaries you hold, and the weight that comes with staying when
-              others walk away.
-            </p>
+      <div className="mx-auto container px-6 relative z-10">
+        <div className="mx-auto max-w-4xl text-center">
+          {/* PRIMARY TITLE: THE FOUNDRY */}
+          <div className="border-b-4 pb-6 mb-4 border-rust inline-block">
+            <h2 className="font-authority text-6xl md:text-8xl lg:text-9xl font-bold text-blue tracking-tighter uppercase">
+              The Foundry
+            </h2>
           </div>
 
-          {/* RIGHT SIDE: Details & CTA */}
-          <div className="w-full lg:w-1/2 flex flex-col items-start pt-10">
-            <div className="flex flex-col gap-6 text-blue/90 text-lg md:text-xl lg:text-2xl font-sans leading-relaxed mb-12">
-              <p>The Foundry is where you learn to orient.</p>
+          {/* SUBTITLE: THE INFLECTION POINT SEGUE */}
+          <div className="mb-16">
+            <h3 className="font-serif text-2xl md:text-3xl lg:text-4xl italic text-rust font-medium">
+              You're at an inflection point.
+            </h3>
+          </div>
 
-              <p>
-                Where pressure becomes signal instead of noise. Where waste heat
-                converts to useful work. Where you stop running from the storm
-                and walk through it.
-              </p>
-              <p>
-                You assess your baseline across the four densities and interrupt
-                the patterns keeping you stuck by building decision structure
-                that holds under pressure.
-              </p>
-              <p>You learn where you are, so you can choose how to move.</p>
+          {/* CONTENT COLUMN: Left-Justified Prose */}
+          <div className="flex flex-col gap-10 font-sans text-lg md:text-xl lg:text-2xl leading-relaxed text-blue/90 text-left">
+            <div className="flex flex-col gap-12">
+              <div className="border-l-4 border-rust pl-8">
+                <p>
+                  Keep optimizing around a{" "}
+                  <b className="text-rust">cracked foundation</b>, working
+                  harder, carrying more, and hoping something eventually shifts.
+                </p>
+              </div>
 
-              <p>This isn’t for everyone. And it doesn’t need to be.</p>
+              <div className="border-l-4 border-gold pl-8">
+                <p>
+                  Or learn to{" "}
+                  <b className="text-gold">see clearly and orient.</b> This is
+                  where that happens.
+                </p>
+              </div>
+            </div>
+
+            <p className="mt-4">
+              You'll work directly with me to find your baseline, interrupt the
+              patterns keeping you stuck, and build the internal structure that
+              will <b className="text-blue">hold under pressure.</b>
+            </p>
+
+            {/* EXPANDED DECISION BOX */}
+            <div className="mt-8 bg-white rounded-sm shadow-xl border border-blue/5 overflow-hidden">
+              <div className="p-8 lg:p-12 pb-6">
+                <p className="font-authority font-bold text-rust uppercase tracking-widest mb-10 text-sm lg:text-base">
+                  Where do you want to be six months from now?
+                </p>
+
+                <ul className="flex flex-col gap-10">
+                  <li className="flex flex-col gap-2 opacity-40">
+                    <div className="flex justify-between items-baseline">
+                      <span className="font-serif italic text-xl lg:text-3xl">
+                        Still buried in fires?
+                      </span>
+                      <span className="font-sans font-bold text-sm lg:text-lg uppercase">
+                        The Reaction
+                      </span>
+                    </div>
+                    <div className="h-[1px] w-full bg-gradient-to-r from-blue/40 via-blue/10 to-transparent" />
+                  </li>
+
+                  <li className="flex flex-col gap-2">
+                    <div className="flex justify-between items-baseline">
+                      <span className="font-serif italic text-xl lg:text-3xl text-blue font-bold">
+                        Oriented and leading?
+                      </span>
+                      <span className="text-gold font-sans font-black text-sm lg:text-lg uppercase">
+                        The Authority
+                      </span>
+                    </div>
+                    <div className="h-[2px] w-full bg-gradient-to-r from-gold via-gold/40 to-transparent" />
+                  </li>
+                </ul>
+              </div>
+
+              {/* INTEGRATED PAYOFF FOOTER */}
+              <div className="bg-blue/5 p-8 lg:p-10 border-t border-blue/5 text-center">
+                <p className="font-authority text-blue text-xl lg:text-3xl leading-snug">
+                  Discharging{" "}
+                  <span className="text-rust font-bold">pressure</span> instead
+                  of absorbing it. <br />
+                  Leading with{" "}
+                  <span className="text-gold font-bold">clarity</span> and
+                  confidence.
+                </p>
+              </div>
+            </div>
+
+            {/* FINAL ANCHOR CTA */}
+            <div className="mt-12 flex justify-center">
+              <a
+                href="#apply"
+                className="group relative inline-flex items-center justify-center px-12 py-6 font-authority text-2xl font-bold text-white transition-all duration-200 bg-rust hover:bg-rust/90 rounded-sm w-full md:w-auto uppercase tracking-[0.2em]"
+              >
+                Enter The Foundry
+                <span className="ml-4 transition-transform group-hover:translate-x-2">
+                  →
+                </span>
+              </a>
             </div>
           </div>
-        </div>
-        <div className="text-center mt-4">
-          <a
-            href="#apply"
-            className="group relative inline-flex items-center justify-center px-10 py-5 font-authority text-xl font-bold text-pure transition-all duration-200 bg-rust hover:bg-rust/90 rounded-sm w-full md:w-auto text-center uppercase tracking-[0.2em]"
-          >
-            Explore The Foundry
-            <span className="ml-3 transition-transform group-hover:translate-x-2">
-              →
-            </span>
-          </a>
         </div>
       </div>
     </section>

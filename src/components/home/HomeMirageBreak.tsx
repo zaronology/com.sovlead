@@ -35,7 +35,7 @@ export default function HomeMirageBreak() {
 
             <div className="flex flex-col gap-6 font-sans text-base md:text-lg lg:text-xl leading-relaxed text-pure/80">
               <p>You can't eliminate the chaos.</p>
-              <p>But you can stop wandering through it blind.</p>
+              <p>But you can stop wandering through it blindly.</p>
               <h3 className="font-serif text-2xl lg:text-3xl text-gold font-semibold">
                 I teach you how to orient under pressure.
               </h3>

@@ -43,12 +43,12 @@ export default function HomeHow() {
     <section className="w-full bg-white">
       <div className="relative w-full bg-blue py-20">
         <div className="mx-auto container border-t border-blue/10 text-center">
-          <p className="font-serif text-2xl lg:text-4xl text-white italic">
+          <p className="font-serif capitalize text-2xl lg:text-4xl text-white italic">
             "You've been optimizing{" "}
             <span className="text-gold font-bold">performance</span>{" "}
             <br className="hidden md:block" />
-            while ignoring your{" "}
-            <span className="text-gold font-bold">operating system</span>."
+            while your{" "}
+            <span className="text-gold font-bold"> foundation cracks</span>."
           </p>
         </div>
       </div>
@@ -69,8 +69,7 @@ export default function HomeHow() {
                   The Blueprint
                 </h2>
                 <h3 className="font-authority text-3xl lg:text-4xl font-bold mb-6">
-                  <span className="text-rust">CORE</span> shows you where you
-                  are.
+                  <span className="text-rust">CORE</span> maps your foundation.
                 </h3>
                 <p className="mb-8 text-lg lg:text-xl leading-relaxed">
                   <b>CORE</b> is how you find your center under pressure. Four

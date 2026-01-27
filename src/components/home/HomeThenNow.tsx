@@ -24,7 +24,7 @@ export default function HomeThisIsForYou() {
     "Coaches who tell you what to do but never show you how",
     "Staying deep in everything so nothing surprises you",
     "Taking on more work, hoping resilience will carry you through",
-    "Reorganizing structure, hoping it will fix the culture",
+    "Reorganizing teams, hoping better org charts will fix the culture",
   ];
 
   return (
@@ -53,7 +53,7 @@ export default function HomeThisIsForYou() {
                       but disoriented.
                     </span>
                   </h3>
-                  <p className="font-sans text-lg text-white/70">
+                  <p className="font-sans text-lg text-white/90">
                     You're capable. Smart. Effective.
                     <b className="block">But you're quietly lost.</b>
                   </p>
@@ -68,7 +68,7 @@ export default function HomeThisIsForYou() {
                       <div className="mt-1.5 flex-shrink-0 text-white/20">
                         <SharpCheck className="h-5 w-5 text-rust" />
                       </div>
-                      <h4 className="flex-1 font-sans text-lg lg:text-xl font-medium text-white/60 leading-snug">
+                      <h4 className="flex-1 font-sans text-lg lg:text-xl font-medium text-white/90 leading-snug">
                         {text}
                       </h4>
                     </div>
@@ -83,16 +83,15 @@ export default function HomeThisIsForYou() {
             <div className="w-full  flex flex-col gap-8 text-blue">
               <div className="space-y-4">
                 <p className="font-serif text-xl lg:text-2xl leading-relaxed">
-                  These are <b className="text-rust">reactions</b>, not
-                  structure.
+                  These are <b className="text-rust">external fixes</b> to an{" "}
+                  <b className="text-rust">internal problem</b>.{" "}
                 </p>
                 <p className="font-sans text-lg lg:text-xl text-blue/80">
                   You're optimizing performance while your{" "}
-                  <b className="text-rust">operating system crashes</b> in the
-                  background.
+                  <b className="text-rust">while your foundation cracks</b>.
                 </p>
                 <p className="font-sans text-lg lg:text-xl text-blue/80">
-                  You're patching symptoms while the foundation cracks.
+                  You're patching symptoms while your structure collapses.
                 </p>
               </div>
 
@@ -101,12 +100,14 @@ export default function HomeThisIsForYou() {
                   What's Different:
                 </h3>
                 <p className="font-sans text-lg lg:text-xl text-blue/90">
-                  I don't give you another framework to execute.{" "}
-                  <b>I show you where you are</b> so you can orient yourself.
+                  I don't give you another framework to execute. I help you{" "}
+                  <b>rebuild your internal structure</b> so you can orient
+                  yourself.
                 </p>
                 <p className="font-sans text-lg lg:text-xl text-blue/90">
                   I teach you how to <b>assess your baseline</b>, interrupt
-                  patterns, and build structure that <b>hold under pressure.</b>
+                  patterns, and build a foundation that will{" "}
+                  <b>hold under pressure.</b>
                 </p>
               </div>
 

@@ -19,7 +19,7 @@ export default function HomeTrifecta() {
       description:
         "This isn't a leadership flaw. It's a human trait. Under stress, you reach for what's familiar rather than what's necessary.",
       impact:
-        "You're solving today's problems with yesterday's survival skills.",
+        "You're solving tomorrow's problems with yesterday's survival skills.",
     },
   ];
 
@@ -54,12 +54,12 @@ export default function HomeTrifecta() {
       </div>
       <div className="relative w-full bg-blue py-20">
         <div className="mx-auto container border-t border-blue/10 text-center">
-          <p className="font-serif text-2xl lg:text-4xl text-white italic">
+          <p className="font-serif capitalize text-2xl lg:text-4xl text-white italic">
             "Pressure doesn't reveal your{" "}
             <span className="text-gold font-bold">potential</span>,{" "}
             <br className="hidden md:block" />
             it reveals your{" "}
-            <span className="text-gold font-bold">structure</span>
+            <span className="text-gold font-bold">foundation</span>
             ."
           </p>
         </div>

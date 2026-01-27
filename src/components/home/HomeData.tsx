@@ -18,7 +18,7 @@ export default function LeadershipStats() {
       percentage: "73%",
       description: (
         <>
-          of C-level execs work without enough rest.{" "}
+          of execs work without enough rest.{" "}
           <span className="font-bold text-gold">56%</span> can't get 7–8 hours
           sleep, and <span className="font-bold text-gold">46%</span> skip
           meals.
@@ -29,7 +29,7 @@ export default function LeadershipStats() {
     {
       percentage: "47%",
       description: (
-        <>of executives say burnout destroys their closest relationships.</>
+        <>of execs say burnout destroys their closest relationships.</>
       ),
       cite: "[Superhuman 2025]",
     },
@@ -38,8 +38,8 @@ export default function LeadershipStats() {
       description: (
         <>
           of leaders hit full burnout in 2024.{" "}
-          <span className="font-bold text-gold">70%</span> of C-suite are ready
-          to quit to save their sanity.
+          <span className="font-bold text-gold">70%</span> of execs are ready to
+          quit to save their sanity.
         </>
       ),
       cite: "Superhuman 2025 (Mayo Clinic data)]",
@@ -48,7 +48,7 @@ export default function LeadershipStats() {
       percentage: "93%",
       description: (
         <>
-          of healthcare execs know burnout kills organizations.{" "}
+          execs know burnout kills organizations.{" "}
           <span className="font-bold text-gold">75%</span> have colleagues who
           already quit.
         </>
