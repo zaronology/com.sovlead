@@ -14,7 +14,7 @@ export default function Hero() {
           className="object-cover object-right lg:object-bottom" // Focused right for mobile, bottom for desktop
         />
         {/* --- IMPROVED GRADIENT LAYER --- */}
-        <div className="absolute inset-0 bg-gradient-to-br from-black via-black/60 via-60% to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-br from-black via-black/20 via-60% to-transparent" />
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-90% to-blue/100" />
       </div>
 

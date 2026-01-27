@@ -18,92 +18,113 @@ const SharpCheck = ({ className = "" }: { className?: string }) => (
   </svg>
 );
 
-export default function HomeThenNow() {
-  const thenListItems = [
+export default function HomeThisIsForYou() {
+  const triedItems = [
     "One-size-fits-all frameworks that don't fit your reality",
     "Coaches who tell you what to do but never show you how",
     "Staying deep in everything so nothing surprises you",
-    "Taking on more work hoping resilience will carry you through",
-    "Reorganizing the team hoping structure will fix the culture",
-  ];
-
-  const nowListItems = [
-    "Decision systems that make choices clear under pressure",
-    "Boundary systems that enforce limits automatically",
-    "Translation systems that make technical reality undeniable",
-    "Accountability systems that keep ownership where it belongs",
-    "Authority that comes from alignment and structure, not force",
+    "Taking on more work, hoping resilience will carry you through",
+    "Reorganizing structure, hoping it will fix the culture",
   ];
 
   return (
-    <section className="relative w-full bg-white-soft py-20 lg:py-32 overflow-hidden">
+    <section className="relative w-full overflow-hidden">
+      {/* --- SPLIT BACKGROUND LAYER --- */}
+      <div className="absolute inset-0 z-0 flex flex-col lg:flex-row">
+        {/* Blue on top/left */}
+        <div className="w-full h-1/2 lg:h-full lg:w-1/2 bg-blue"></div>
+        {/* White on bottom/right */}
+        <div className="w-full h-1/2 lg:h-full lg:w-1/2 bg-white"></div>
+      </div>
+
       <div className="relative z-10 mx-auto container px-6">
-        <div className="text-center mb-16 lg:mb-24">
-          <h2 className="font-authority capitalize text-4xl md:text-5xl lg:text-7xl font-bold tracking-tight text-blue leading-tight border-b-2 pb-2 border-rust inline-block">
-            Why Nothing Has Worked
-          </h2>
-        </div>
-        {/* --- SIDE-BY-SIDE GRID --- */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 xl:gap-24">
-          {/* LEFT COLUMN: The Old Reality */}
-          <div className="flex justify-center lg:justify-end">
-            {/* By setting a specific width (w-full) and a hard max-width, 
-        we ensure the blue lane is identical to the gold lane. */}
-            <div className="w-full max-w-[500px] flex flex-col gap-8">
-              <h3 className="font-serif text-2xl lg:text-3xl font-bold text-blue border-l-4 border-rust pl-4">
-                What You've Tried
-              </h3>
-              <div className="flex flex-col gap-6">
-                {thenListItems.map((text, index) => (
-                  <div key={index} className="flex items-start gap-4">
-                    <div className="mt-1.5 flex-shrink-0 text-blue/30">
-                      <SharpCheck className="h-5 w-5" />
+        <div className="flex flex-col lg:flex-row w-full">
+          <div className="w-full lg:w-1/2 py-16 lg:py-24 flex items-center lg:pr-16">
+            <div className="w-full flex flex-col gap-8">
+              <h2 className="font-authority text-gold text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tight leading-tight">
+                This Is For You <span className="text-white">If...</span>
+              </h2>
+
+              <div className="flex flex-col gap-8">
+                <div className="border-l-4 border-rust pl-6">
+                  <h3 className="font-serif text-2xl lg:text-3xl/relaxed font-bold text-white mb-2">
+                    You're high-functioning
+                    <span className="text-gold italic block">
+                      but disoriented.
+                    </span>
+                  </h3>
+                  <p className="font-sans text-lg text-white/70">
+                    You're capable. Smart. Effective.
+                    <b className="block">But you're quietly lost.</b>
+                  </p>
+                </div>
+
+                <div className="flex flex-col gap-6">
+                  <p className="font-authority text-gold font-semibold uppercase tracking-widest text-md">
+                    You've already tried:
+                  </p>
+                  {triedItems.map((text, index) => (
+                    <div key={index} className="flex items-start gap-4">
+                      <div className="mt-1.5 flex-shrink-0 text-white/20">
+                        <SharpCheck className="h-5 w-5 text-rust" />
+                      </div>
+                      <h4 className="flex-1 font-sans text-lg lg:text-xl font-medium text-white/60 leading-snug">
+                        {text}
+                      </h4>
                     </div>
-                    {/* 'flex-1' forces the text to take up all remaining space in the 500px box */}
-                    <h4 className="flex-1 font-sans text-lg lg:text-xl font-medium text-blue/60 leading-snug">
-                      {text}
-                    </h4>
-                  </div>
-                ))}
-              </div>
-              <div>
-                <p className="font-sans text-lg lg:text-xl font-medium text-blue/60 leading-snug">
-                  These are reactions, not systems. You're patching symptoms
-                  while the foundation cracks.
-                </p>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
 
-          {/* RIGHT COLUMN: The New Authority */}
-          <div className="flex justify-center lg:justify-start">
-            {/* Hard-coded to the exact same [500px] to prevent the 384px collapse */}
-            <div className="w-full max-w-[500px] flex flex-col gap-8">
-              <h3 className="font-serif text-2xl lg:text-3xl font-bold text-blue border-l-4 border-gold pl-4">
-                What Actually Works
-              </h3>
-              <div className="flex flex-col gap-6">
-                {nowListItems.map((text, index) => (
-                  <div key={index} className="flex items-start gap-4">
-                    <div className="mt-1.5 flex-shrink-0 text-rust">
-                      <SharpCheck className="h-5 w-5 lg:h-6 lg:w-6" />
-                    </div>
-                    {/* 'flex-1' here ensures the 'Now' text pushes out to the same 500px boundary */}
-                    <h4 className="flex-1 font-sans text-lg lg:text-xl font-medium text-blue/60 leading-snug">
-                      {text}
-                    </h4>
-                  </div>
-                ))}
+          {/* RIGHT COLUMN: THE SHIFT & THE SYSTEM (WHITE) */}
+          <div className="w-full lg:w-1/2 py-16 lg:py-24 flex flex-col justify-center lg:items-end lg:pl-16">
+            <div className="w-full  flex flex-col gap-8 text-blue">
+              <div className="space-y-4">
+                <p className="font-serif text-xl lg:text-2xl leading-relaxed">
+                  These are <b className="text-rust">reactions</b>, not systems.
+                </p>
+                <p className="font-sans text-lg lg:text-xl text-blue/80">
+                  You're optimizing performance while your{" "}
+                  <b className="text-rust">operating system crashes</b> in the
+                  background.
+                </p>
+                <p className="font-sans text-lg lg:text-xl text-blue/80">
+                  You're patching symptoms while the foundation cracks.
+                </p>
               </div>
-              <div>
-                <p className="font-sans text-lg lg:text-xl font-medium text-blue/60 leading-snug">
-                  You stop absorbing chaos. You stop running from the storm. You
-                  become the buffalo.
+
+              <div className="border-l-4 border-gold pl-6 space-y-6">
+                <h3 className="font-authority text-2xl lg:text-3xl font-bold uppercase tracking-tight">
+                  What's Different:
+                </h3>
+                <p className="font-sans text-lg lg:text-xl text-blue/90">
+                  I don't give you another framework to execute.{" "}
+                  <b>I show you where you are</b> so you can orient yourself.
+                </p>
+                <p className="font-sans text-lg lg:text-xl text-blue/90">
+                  I teach you how to <b>assess your baseline</b>, interrupt
+                  patterns, and build systems that <b>hold under pressure.</b>
+                </p>
+              </div>
+
+              <div className="mt-4 pt-8 border-t border-blue/20">
+                <p className="font-authority text-3xl text-blue leading-tight mb-4">
+                  You stop absorbing chaos.
+                </p>
+                <p className="font-authority text-3xl text-blue leading-tight mb-4">
+                  You stop running from the storm.
+                </p>
+                <p className="font-authority text-3xl text-blue leading-tight">
+                  <span className="text-rust font-bold text-4xl lg:text-5xl underline decoration-gold underline-offset-8">
+                    You become the buffalo.
+                  </span>
                 </p>
               </div>
             </div>
           </div>
-        </div>{" "}
+        </div>
       </div>
     </section>
   );

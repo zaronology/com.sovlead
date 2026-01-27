@@ -8,7 +8,7 @@ type NavItem = { label: string; href: string };
 
 const NAV_ITEMS: NavItem[] = [
   { label: "Home", href: "/" },
-  { label: "Authority Systems", href: "/authority" },
+  // { label: "Authority Systems", href: "/authority" },
   { label: "Insights", href: "/insights" },
   { label: "The Foundry", href: "/the-foundry" },
 ];

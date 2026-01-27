@@ -49,21 +49,20 @@ export default function Footer() {
               <Image
                 src={logoImg}
                 alt="Company Logo"
-                width={180}
-                height={50}
-                className="brightness-0 invert opacity-90"
+                width={260}
+                className=""
               />
             </Link>
             <p className="text-sm md:text-base leading-relaxed max-w-sm">
-              Leadership trains you to absorb pressure without teaching you how
-              to release it. We help you install the decision, boundary,
-              translation, and accountability systems that let you lead from
-              clarity instead of reacting to chaos
+              Leadership taught you to absorb pressure but never taught you how
+              to release it. We teach you how to orient under pressure by
+              building the decision, boundary, translation, and accountability
+              systems that let you lead from clarity instead of chaos.
             </p>
           </div>
 
           {/* Link Column 1 */}
-          <div className="flex flex-col gap-4">
+          {/* <div className="flex flex-col gap-4">
             <h4 className="text-white font-bold uppercase tracking-widest text-sm">
               Navigation
             </h4>
@@ -79,10 +78,10 @@ export default function Footer() {
                 </li>
               ))}
             </ul>
-          </div>
+          </div> */}
 
           {/* Link Column 2 */}
-          <div className="flex flex-col gap-4">
+          {/* <div className="flex flex-col gap-4">
             <h4 className="text-white font-bold uppercase tracking-widest text-sm">
               Resources
             </h4>
@@ -98,7 +97,7 @@ export default function Footer() {
                 </li>
               ))}
             </ul>
-          </div>
+          </div> */}
         </div>
 
         {/* Divider */}
