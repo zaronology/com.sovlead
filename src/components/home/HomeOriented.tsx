@@ -13,7 +13,8 @@ export default function HomeOriented() {
 
           <div className="flex flex-col gap-10 font-sans text-lg md:text-xl lg:text-2xl leading-relaxed text-blue/90 text-left">
             <p className="font-serif text-2xl lg:text-3xl italic text-blue">
-              When you learn to orient under pressure, you:
+              When orientation is restored, effort drops and authority holds
+              under pressure. You:
             </p>
 
             <div className="flex flex-col gap-12">
@@ -22,8 +23,8 @@ export default function HomeOriented() {
                   Stop reacting to every fire.
                 </h4>
                 <p>
-                  Knowing what matters now, what can wait. Deciding from{" "}
-                  <b className="text-gold">clarity</b>, not panic.
+                  You know what matters now and what can wait. Decisions come
+                  from <b className="text-gold">clarity</b>, not panic.
                 </p>
               </div>
 
@@ -32,9 +33,9 @@ export default function HomeOriented() {
                   Get back to center in minutes, not days.
                 </h4>
                 <p>
-                  Week-long retreats not required. You have a{" "}
-                  <b className="text-gold">system to return to yourself</b>,
-                  even in the chaos.
+                  Week-long retreats not required. You can&nbsp;
+                  <b className="text-gold">return to yourself</b>, even in the
+                  chaos.
                 </p>
               </div>
 
@@ -43,8 +44,8 @@ export default function HomeOriented() {
                   Stop performing what you don't want to be.
                 </h4>
                 <p>
-                  Leading from <b className="text-gold">who you are</b>, not
-                  trying to prove it.
+                  You lead from <b className="text-gold">who you are</b>, not
+                  from something you’re trying to prove.
                 </p>
               </div>
 
@@ -54,13 +55,23 @@ export default function HomeOriented() {
                 </h4>
                 <p>
                   Your energy converts to{" "}
-                  <b className="text-rust">useful work</b> instead of burning as
-                  waste heat.
+                  <b className="text-rust">useful work</b> instead of burning
+                  off as waste heat.
                 </p>
               </div>
             </div>
+            <div className="text-center py-10">
+              <p className="font-serif capitalize text-2xl lg:text-4xl text-blue italic">
+                "Orientation doesn’t make the&nbsp;
+                <span className="text-rust font-bold">storm disappear</span>
+                , <br className="hidden md:block" />
+                It changes how you&nbsp;
+                <span className="text-rust font-bold">move inside it</span>
+                ."
+              </p>
+            </div>
 
-            <div className="mt-8 bg-white-soft p-8 lg:p-12 text-blue rounded-sm shadow-md border border-blue/10">
+            <div className="bg-white-soft p-8 lg:p-12 text-blue rounded-sm shadow-md border border-blue/10">
               <p className="font-authority font-medium text-rust uppercase tracking-widest mb-8 text-sm lg:text-base">
                 Orientation is the difference between:
               </p>

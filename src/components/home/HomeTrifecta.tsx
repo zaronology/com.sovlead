@@ -3,21 +3,21 @@ import React from "react";
 export default function HomeTrifecta() {
   const traps = [
     {
-      title: "Leaders collapse inward.",
+      title: "Leaders collapse inward",
       description:
-        "It's lonely at the top. There's no equal to think out loud with. So it all stays inside.",
+        "It's lonely at the top. There's no equal to think out loud with. When pressure rises, clarity collapses inward.",
       impact: "The mind gets loud. The room gets quiet.",
     },
     {
-      title: "Competent people over-function.",
+      title: "Competence becomes a trap",
       description:
-        "They take on more. They solve faster. They carry what isn't theirs because it's easier than watching things get messy.",
+        "You take on more. Solve faster. Carry what isn't yours because it's easier than watching things get messy.",
       impact: "You trade your capacity for everyone else's comfort.",
     },
     {
-      title: "Humans default to old patterns.",
+      title: "Patterns resurface under stress",
       description:
-        "This isn't a leadership flaw. It's a human trait. Under stress, you reach for what's familiar rather than what's necessary.",
+        "Old behaviors return under stress. You reach for what's familiar rather than what's necessary.",
       impact:
         "You're solving tomorrow's problems with yesterday's survival skills.",
     },
