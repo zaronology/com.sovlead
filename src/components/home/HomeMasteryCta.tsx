@@ -10,7 +10,7 @@ export default function FoundrySections() {
           {/* LEFT SIDE: Headline & Lead */}
           <div className="w-full lg:w-6/12 text-blue ">
             <div className="border-b-4 pb-6 mb-8 border-f-rust">
-              <h2 className="font-authority text-8xl font-bold">
+              <h2 className="font-authority text-7xl font-bold">
                 The
                 <br />
                 Foundry
@@ -42,17 +42,15 @@ export default function FoundrySections() {
               <p>
                 Where pressure becomes signal instead of noise. Where waste heat
                 converts to useful work. Where you stop running from the storm
-                and walk into it.
+                and walk through it.
               </p>
               <p>
-                The Foundry teaches you where you are, so you can choose how to
-                move.
+                You assess your baseline across the four densities and interrupt
+                the patterns keeping you stuck by building decision systems that
+                hold under pressure.
               </p>
-              <p>
-                You'll learn to assess your baseline across four densities.
-                Interrupt the patterns keeping you stuck. Build decision systems
-                that hold under pressure.
-              </p>
+              <p>You learn where you are, so you can choose how to move.</p>
+
               <p>This isn’t for everyone. And it doesn’t need to be.</p>
             </div>
           </div>
