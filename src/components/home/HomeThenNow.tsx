@@ -83,7 +83,8 @@ export default function HomeThisIsForYou() {
             <div className="w-full  flex flex-col gap-8 text-blue">
               <div className="space-y-4">
                 <p className="font-serif text-xl lg:text-2xl leading-relaxed">
-                  These are <b className="text-rust">reactions</b>, not systems.
+                  These are <b className="text-rust">reactions</b>, not
+                  structure.
                 </p>
                 <p className="font-sans text-lg lg:text-xl text-blue/80">
                   You're optimizing performance while your{" "}
@@ -105,7 +106,7 @@ export default function HomeThisIsForYou() {
                 </p>
                 <p className="font-sans text-lg lg:text-xl text-blue/90">
                   I teach you how to <b>assess your baseline</b>, interrupt
-                  patterns, and build systems that <b>hold under pressure.</b>
+                  patterns, and build structure that <b>hold under pressure.</b>
                 </p>
               </div>
 

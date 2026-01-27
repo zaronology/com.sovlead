@@ -46,8 +46,8 @@ export default function FoundrySections() {
               </p>
               <p>
                 You assess your baseline across the four densities and interrupt
-                the patterns keeping you stuck by building decision systems that
-                hold under pressure.
+                the patterns keeping you stuck by building decision structure
+                that holds under pressure.
               </p>
               <p>You learn where you are, so you can choose how to move.</p>
 

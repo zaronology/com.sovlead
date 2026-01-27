@@ -41,18 +41,16 @@ export default function HomeHow() {
 
   return (
     <section className="w-full bg-white">
-      {/* --- TOP TITLE: 100% Across, 2 Lines, Centered, Blue --- */}
-      <div className="w-full bg-blue py-16 lg:py-24 px-6 text-center">
-        <h3 className="font-authority text-white leading-tight font-medium max-w-7xl mx-auto">
-          <span className="block text-4xl lg:text-5xl/tight xl:text-6xl/tight">
-            You've been optimizing{" "}
-            <span className="text-gold font-bold">performance</span>
-          </span>
-          <span className="block text-4xl lg:text-5xl/tight xl:text-6xl/tight">
+      <div className="relative w-full bg-blue py-20">
+        <div className="mx-auto container border-t border-blue/10 text-center">
+          <p className="font-serif text-2xl lg:text-4xl text-white italic">
+            "You've been optimizing{" "}
+            <span className="text-gold font-bold">performance</span>{" "}
+            <br className="hidden md:block" />
             while ignoring your{" "}
-            <span className="text-gold font-bold">operating system.</span>
-          </span>
-        </h3>
+            <span className="text-gold font-bold">operating system</span>."
+          </p>
+        </div>
       </div>
 
       <div className="relative w-full overflow-hidden pt-10 pb-20 lg:pt-20 lg:pb-32">
@@ -122,7 +120,7 @@ export default function HomeHow() {
                 <div className="border-t border-blue/10 pt-8">
                   <p className="font-sans text-lg lg:text-xl text-blue/80 leading-relaxed">
                     I teach you how to assess where you are, interrupt patterns,
-                    and build systems that <b>hold under pressure.</b>
+                    and build structure that <b>holds under pressure.</b>
                   </p>
                 </div>
               </div>

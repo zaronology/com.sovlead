@@ -9,6 +9,7 @@ import HomeMirageBreak from "@/components/home/HomeMirageBreak";
 import HomeMasteryCta from "@/components/home/HomeMasteryCta";
 import HomeThenNow from "@/components/home/HomeThenNow";
 import HomeOriented from "@/components/home/HomeOriented";
+import HomeTrifecta from "@/components/home/HomeTrifecta";
 
 export const metadata = buildMetadata({});
 
@@ -17,6 +18,7 @@ const page = () => {
     <>
       <HomeHero />
       <HomeLeadership />
+      <HomeTrifecta />
       <HomeWhy />
       <HomeData />
       <HomeMirage />

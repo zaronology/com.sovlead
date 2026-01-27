@@ -57,7 +57,7 @@ export default function Footer() {
               Leadership taught you to absorb pressure but never taught you how
               to release it. We teach you how to orient under pressure by
               building the decision, boundary, translation, and accountability
-              systems that let you lead from clarity instead of chaos.
+              structure that lets you lead from clarity instead of chaos.
             </p>
           </div>
 

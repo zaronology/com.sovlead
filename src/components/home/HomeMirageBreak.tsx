@@ -5,9 +5,6 @@ export default function HomeMirageBreak() {
   return (
     <section className="relative w-full bg-gradient-to-r from-black via-30% to-blue/100 overflow-hidden">
       <div className="flex flex-col lg:flex-row w-full h-full">
-        {/* --- LEFT SIDE: IMAGE LAYER --- */}
-        {/* On mobile/stacked: Full width, set height */}
-        {/* On lg+: Takes up exactly half the screen width */}
         <div className="relative w-full lg:w-1/2 aspect-square lg:aspect-auto lg:min-h-[700px]">
           <Image
             src={stormImg}
@@ -20,10 +17,6 @@ export default function HomeMirageBreak() {
 
         {/* --- RIGHT SIDE: CONTENT LAYER --- */}
         <div className="w-full lg:w-1/2 flex items-center">
-          {/* This is the secret sauce for your consistency:
-              We use the container padding logic on the right side ONLY 
-              so the text lines up with the text in the components above.
-          */}
           <div className="py-16 lg:py-24 px-6 lg:pl-16 lg:pr-12 xl:pr-24 max-w-4xl">
             <div className="border-l-4 border-rust pl-6 py-2 mb-10">
               <p className="font-serif text-2xl md:text-3xl leading-tight font-bold text-pure">

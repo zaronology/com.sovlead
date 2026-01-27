@@ -18,9 +18,9 @@ const SharpLine = ({ className = "" }: { className?: string }) => (
 );
 
 const burdenList = [
-  "They stop solving things themselves",
-  "They wait for you to decide",
-  "You become the bottleneck",
+  "You carry more, they carry less.",
+  "They wait for you to have the answer",
+  "You lose yourself in the work",
   "Your expertise becomes your prison",
 ];
 const outcomeList = [
@@ -47,8 +47,9 @@ export default function WhyItHappens() {
                 burden of competence
               </h3>
               <p className="font-sans text-base text-blue/90 md:text-lg xl:text-xl 2xl:text-2xl leading-relaxed mb-8 max-w-1xl">
-                The more capable you are, the more everyone turns to you. The
-                more they rely on you, the less responsibility they take.
+                The more capable you are, the more others rely on you, 
+                narrowing your focus to immediate problems while you lose sight
+                of the full picture.
               </p>
 
               <ul className="flex flex-col gap-5">
@@ -71,8 +72,9 @@ export default function WhyItHappens() {
                 The Burden Escalates
               </h3>
               <p className="font-sans text-base text-blue md:text-lg xl:text-xl 2xl:text-2xl leading-relaxed mb-8">
-                You're caught between people who need results yesterday and
-                teams buried in fires they can't seem to put out.
+                You're caught between needing results yesterday and teams buried
+                in fires. You become the bridge, absorbing pressure from both
+                sides.
               </p>
 
               <ul className="flex flex-col gap-5">
