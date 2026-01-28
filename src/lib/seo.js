@@ -4,9 +4,9 @@ const BASE_URL = "https://sovlead.com";
 
 const DEFAULTS = {
   siteName: "Sovereign Leadership",
-  titleDefault: "Strategic advisory for technical executives and leaders",
+  titleDefault: "Stop firefighting. Start leading from clarity.",
   description:
-    "For technical executives navigating risk, timelines, and decisions. Cut chaos, protect your team, and keep authority intact as demands accelerate.",
+    "For high-functioning leaders who are quietly lost. I teach you how to orient under pressure and discharge what you've been absorbing. Advisory for executives, founders, and technical leaders.",
   ogImage: "/SL-logo-horizontial-w.png",
   locale: "en_US",
 };
