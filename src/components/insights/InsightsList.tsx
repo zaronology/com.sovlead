@@ -23,20 +23,17 @@ const InsightsList: React.FC<InsightsListProps> = ({ posts }) => {
 
   return (
     <section className="relative w-full bg-gray-50 min-h-screen pb-20">
-      <div className="container mx-auto px-6 pt-10">
-        {/* Breadcrumbs Section */}
+      <div className="container mx-auto px-6 pt-10 pb-100">
         <div className="mb-10">
           <InsightsBreadcrumbs page={false} />
         </div>
 
-        {/* Insights Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 relative z-10">
           {safePosts.map((post) => (
             <article
               key={post.slug}
               className="group relative flex flex-col h-full bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-xl transition-all duration-300"
             >
-              {/* Card Image */}
               {post.coverImage && (
                 <div className="relative aspect-video w-full overflow-hidden">
                   <img
@@ -47,7 +44,6 @@ const InsightsList: React.FC<InsightsListProps> = ({ posts }) => {
                 </div>
               )}
 
-              {/* Card Content */}
               <div className="p-8 flex flex-col flex-grow">
                 <time className="text-xs font-bold text-gold uppercase tracking-widest mb-3">
                   {post.date}
@@ -66,7 +62,6 @@ const InsightsList: React.FC<InsightsListProps> = ({ posts }) => {
                   {post.excerpt}
                 </p>
 
-                {/* Optional "Read More" visual cue */}
                 <div className="mt-auto pt-6 flex items-center text-sm font-bold text-gray-900 group-hover:text-rust transition-colors">
                   Read Insight
                   <svg
@@ -97,12 +92,11 @@ const InsightsList: React.FC<InsightsListProps> = ({ posts }) => {
         </div>
       </div>
 
-      {/* Decorative Brand Image */}
-      <div className="hidden lg:block absolute bottom-0 right-0 w-1/3 max-w-md pointer-events-none opacity-40 mix-blend-multiply">
+      <div className="hidden lg:block absolute bottom-0 right-0 w-1/3 max-w-md pointer-events-none opacity-75 mix-blend-multiply">
         <Image
           src={daveThink}
           alt="Reflecting on leadership"
-          className="w-full h-auto object-contain grayscale"
+          className="w-full h-auto object-contain"
         />
       </div>
     </section>
