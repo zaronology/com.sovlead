@@ -8,9 +8,6 @@ interface InsightsPageProps {
 }
 
 export default async function InsightsPage({ slug }: InsightsPageProps) {
-  // LOGGING: Useful for debugging build-time issues
-  console.log(`Processing Post Content: ${slug}`);
-
   const post = getPostBySlug(slug, [
     "title",
     "date",
@@ -28,15 +25,12 @@ export default async function InsightsPage({ slug }: InsightsPageProps) {
   return (
     <section className="w-full bg-gray-50/50 pb-20">
       <div className="container mx-auto px-6">
-        {/* Breadcrumbs Row */}
         <div className="pt-6 mb-6">
           <InsightsBreadcrumbs page={true} title={post.title} />
         </div>
 
-        {/* Article Content Row */}
         <div className="flex justify-center">
-          <div className="w-full max-w-4xl">
-            {/* The actual MDX/Markdown content parser */}
+          <div className="w-full">
             <InsightsArticle source={post.content} />
           </div>
         </div>

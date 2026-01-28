@@ -42,7 +42,6 @@
       @apply text-rust underline;
     }
   }
-
   & blockquote {
     @apply bg-gray-50 py-1 px-6 rounded-r-lg italic;
   }
@@ -95,5 +94,13 @@ body {
   }
   .quotebox-headline {
     @apply font-authority text-blue font-bold text-xl md:text-2xl lg:text-3xl mb-2;
+  }
+  .prose-sovereign
+    :where(h2):first-of-type:not(:where([class~="not-prose"] *)) {
+    margin-top: 20px !important;
+  }
+  .prose-sovereign
+    :where(hr):not(:where([class~="not-prose"], [class~="not-prose"] *)) {
+    border-color: var(--color-rust) !important;
   }
 }
