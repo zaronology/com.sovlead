@@ -1,4 +1,5 @@
 import React from "react";
+import { AuthorityQuote } from "../SubComponents";
 
 const SharpCheck = ({ className = "" }: { className?: string }) => (
   <svg
@@ -41,17 +42,16 @@ export default function HomeHow() {
 
   return (
     <section className="w-full bg-white">
-      <div className="relative w-full bg-blue py-20">
-        <div className="mx-auto container border-t border-blue/10 text-center">
-          <p className="font-serif capitalize text-2xl lg:text-4xl text-white italic">
-            "You've been optimizing{" "}
-            <span className="text-gold font-bold">performance</span>{" "}
-            <br className="hidden md:block" />
-            while your{" "}
-            <span className="text-gold font-bold"> foundation cracks</span>."
-          </p>
-        </div>
-      </div>
+      <AuthorityQuote
+        lead="You've been optimizing"
+        leadEmp="performance"
+        close="while your"
+        closeEmp="foundation cracks"
+        bgColor="blue"
+        leadColor="white"
+        empColor="gold"
+        breakLine="xts"
+      ></AuthorityQuote>
 
       <div className="relative w-full overflow-hidden pt-10 pb-20 lg:pt-20 lg:pb-32">
         {/* BACKGROUND LAYER (Fixed Split) */}
@@ -97,7 +97,7 @@ export default function HomeHow() {
               <div className="w-full h-px lg:w-0.5 lg:h-3/4 bg-rust"></div>
             </div>
 
-            <div className="w-full lg:w-1/2 py-12 lg:py-16 lg:pl-16 flex flex-col justify-center">
+            <div className="w-full lg:w-1/2 py-6 lg:py-16 lg:pl-16 flex flex-col justify-center">
               <div className="w-full text-blue pt-6">
                 <p className="font-serif text-2xl lg:text-2xl/relaxed text-blue italic mb-10 leading-snug">
                   When disoriented, at least one of these is compromised. When{" "}

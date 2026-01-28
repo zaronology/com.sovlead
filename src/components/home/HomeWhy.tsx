@@ -1,4 +1,5 @@
 import React from "react";
+import { SectionHeadline } from "../SubComponents";
 
 const SharpLine = ({ className = "" }: { className?: string }) => (
   <svg
@@ -35,18 +36,13 @@ export default function WhyItHappens() {
     <section className="w-full">
       <div className="w-full bg-white-soft py-16 md:py-24 lg:pt-30 lg:pb-60">
         <div className="mx-auto container px-6">
-          {/* CENTER HEADLINE */}
-          <div className="mb-16 md:mb-14 flex justify-center">
-            <h2 className="font-authority text-center text-4xl md:text-5xl xl:text-6xl 2xl:text-7xl font-bold leading-tight tracking-tight text-blue max-w-4xl border-b pb-2 border-f-rust">
-              Why Does This Happen?
-            </h2>
-          </div>
+          <SectionHeadline>Why Does This Happen?</SectionHeadline>
           <div className="flex flex-col lg:flex-row">
-            <div className="w-full lg:w-1/2 py-12 lg:py-0 lg:pr-16 border-b-2 border-rust lg:border-b-0 lg:border-r-2">
-              <h3 className="font-serif text-3xl  font-medium text-rust md:text-3xl lg:text-4xl xl:text-5xl  mb-4 capitalize">
+            <div className="w-full lg:w-1/2 pb-12 pt-0 lg:py-0 lg:pr-16 border-b-2 border-rust lg:border-b-0 lg:border-r-2">
+              <h3 className="font-serif text-2xl font-semibold text-rust md:text-3xl lg:text-4xl mb-4 capitalize">
                 burden of competence
               </h3>
-              <p className="font-sans text-base text-blue/90 md:text-lg xl:text-xl 2xl:text-2xl leading-relaxed mb-8 max-w-1xl">
+              <p className="font-sans text-base text-blue/90 md:text-lg xl:text-xl leading-relaxed mb-8 max-w-1xl">
                 The more capable you are, the more others rely on you, 
                 narrowing your focus to immediate problems while you lose sight
                 of the full picture.
@@ -67,8 +63,8 @@ export default function WhyItHappens() {
             </div>
 
             {/* RIGHT BOX: The outcome is on you */}
-            <div className="w-full lg:w-1/2 py-12 lg:py-0 lg:pl-16">
-              <h3 className="font-serif text-3xl md:text-3xl lg:text-4xl xl:text-5xl font-medium text-rust mb-4 capitalize">
+            <div className="w-full lg:w-1/2 pt-12 pb-0 lg:py-0 lg:pl-16">
+              <h3 className="font-serif text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-semibold text-rust mb-4 capitalize">
                 The Burden Escalates
               </h3>
               <p className="font-sans text-base text-blue md:text-lg xl:text-xl 2xl:text-2xl leading-relaxed mb-8">
@@ -93,8 +89,8 @@ export default function WhyItHappens() {
           </div>
         </div>
       </div>
-      <div className="mx-auto container pb-30 ">
-        <div className="bg-white-soft md:max-w-7/12 text-blue mx-auto py-10 px-6 md:px-10 text-2xl -mt-40 shadow-sm">
+      <div className="mx-auto container pb-16 lg:pb-30 ">
+        <div className="bg-white-soft lg:max-w-7/12 text-blue mx-auto py-10 px-6 md:px-10 text-lg lg:text-xl xl:text-2xl lg:-mt-40 shadow-sm">
           <p className="mb-6">
             Something inside won't let you quit, even when the cost is your
             health, relationships, integrity, and time.

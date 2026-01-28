@@ -5,7 +5,9 @@
   --font-sans: var(--font-inter);
   --font-serif: var(--font-lora);
   --font-authority: var(--font-cinzel);
-
+  /*Breakpoints*/
+  --breakpoint-xts: 400px;
+  --breakpoint-xs: 500px;
   /* Colors */
   --color-white: #f4f1ed;
   --color-white-soft: #f8f6f3;
@@ -19,6 +21,7 @@
   --color-error: #ff0000;
   --color-pure: #ffffff;
 }
+
 /* Customizing the Typography plugin in v4 */
 @utility prose-sovereign {
   @apply prose prose-gray max-w-none;
@@ -49,10 +52,48 @@ body {
   background-color: var(--color-white);
 }
 
-.hero-box {
-  top: auto;
-  bottom: -100px;
-  background: var(--color-white);
-  color: var(--color-blue);
-  border-radius: 4px;
+@layer components {
+  .hero-headline {
+    @apply font-authority font-bold capitalize text-pure;
+    @apply text-2xl/tight xts:text-3xl/tight xs:text-4xl/tight lg:text-5xl/tight xl:text-6xl/tight 2xl:text-7xl/tight;
+  }
+
+  .hero-sub_headline {
+    @apply mt-4;
+    @apply font-serif text-base/snug capitalize text-pure/90;
+    @apply text-base/snug xs:text-lg/snug sm:text-xl/snug lg:text-2xl/snug xl:text-3xl/snug 2xl:text-4xl/snug;
+  }
+
+  .hero-pg {
+    @apply mt-6 md:mt-8;
+    @apply max-w-md lg:max-w-[520px];
+    @apply font-sans text-pure/80;
+    @apply text-sm/relaxed xs:text-base/relaxed md:text-lg/relaxed 2xl:text-xl/relaxed;
+  }
+
+  .authority-quote {
+    @apply font-serif capitalize italic;
+    @apply text-xl/tight xs:text-2xl/tight lg:text-4xl/tight;
+  }
+  .tri-title {
+    @apply font-serif font-bold text-blue leading-tight italic;
+    @apply text-xl sm:text-2xl xl:text-3xl;
+  }
+  .section-headline {
+    @apply font-authority text-center font-black leading-tight tracking-tight text-blue;
+    @apply text-2xl xs:text-4xl md:text-5xl xl:text-6xl;
+    @apply md:max-w-4xl relative pb-2;
+    &::after {
+      content: "";
+      @apply absolute bottom-0 left-1/2 -translate-x-1/2;
+      @apply w-full xs:w-full h-[2px]; /* 50% width, 4px thick */
+      @apply bg-f-rust rounded-full;
+    }
+  }
+  .foundry-headline {
+    @apply text-6xl xs:text-7xl md:text-8xl xl:text-9xl;
+  }
+  .quotebox-headline {
+    @apply font-authority text-blue font-bold text-xl md:text-2xl lg:text-3xl mb-2;
+  }
 }

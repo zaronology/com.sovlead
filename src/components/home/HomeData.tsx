@@ -1,4 +1,5 @@
 import React from "react";
+import { SectionHeadline } from "../SubComponents";
 
 const SharpLine = ({ className = "" }: { className?: string }) => (
   <svg
@@ -69,13 +70,8 @@ export default function LeadershipStats() {
   return (
     <section className="w-full bg-white">
       {/* 1. TOP STATS GRID (Contained) */}
-      <div className="mx-auto container px-6 pb-40 pt-10">
-        <div className="mb-16 md:mb-20 text-center">
-          <h2 className="font-authority capitalize text-4xl font-bold tracking-tight text-blue md:text-5xl lg:text-6xl max-w-3xl mx-auto leading-tight border-b-2 pb-2 border-rust inline-block">
-            You're not alone
-          </h2>
-        </div>
-
+      <div className="mx-auto container px-6 pb-20 lg:pb-40 pt-10">
+        <SectionHeadline>You're not alone</SectionHeadline>
         <div className="w-full md:w-10/12 lg:w-full xl:w-10/12 mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 ">
           {dataPoints.map((point, index) => (
             <div

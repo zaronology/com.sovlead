@@ -1,4 +1,5 @@
 import React from "react";
+import { SectionHeadline } from "../SubComponents";
 
 export default function TheMirage() {
   return (
@@ -6,11 +7,7 @@ export default function TheMirage() {
       <div className="mx-auto container px-6 relative z-10">
         <div className="mx-auto max-w-4xl text-center">
           {/* Headline: Centered with the rust border weight matching the others */}
-          <div className="mb-12 lg:mb-16">
-            <h2 className="font-authority capitalize text-4xl md:text-5xl lg:text-7xl font-bold tracking-tight text-blue leading-tight border-b-2 pb-2 border-rust inline-block">
-              You're Disoriented.
-            </h2>
-          </div>
+          <SectionHeadline>You're Disoriented</SectionHeadline>
           <div className="flex flex-col gap-8 font-sans text-lg md:text-xl lg:text-2xl leading-relaxed text-blue/90 text-left">
             <p>Chaos doesn't stop you.</p>
             <p>

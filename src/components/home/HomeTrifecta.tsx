@@ -1,4 +1,5 @@
 import React from "react";
+import { AuthorityQuote } from "../SubComponents";
 
 export default function HomeTrifecta() {
   const traps = [
@@ -28,22 +29,20 @@ export default function HomeTrifecta() {
       <div className="relative w-full bg-white-soft py-20 lg:py-32">
         <div className="mx-auto container px-6 relative z-10">
           {/* 3-Column Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 lg:gap-16">
+          <div className="grid grid-cols-1 lg:grid-cols-2 lg:grid-cols-3 gap-12 lg:gap-16">
             {traps.map((trap, index) => (
               <div key={index} className="flex flex-col gap-6">
                 {/* Gold "Spine" Headline */}
                 <div className="border-l-4 border-gold pl-6">
-                  <h3 className="font-serif text-2xl lg:text-3xl font-bold text-blue leading-tight italic">
-                    {trap.title}
-                  </h3>
+                  <h3 className="tri-title">{trap.title}</h3>
                 </div>
 
                 {/* Description & Impact */}
                 <div className="flex flex-col gap-4">
-                  <p className="font-sans text-lg lg:text-xl text-blue/70 leading-relaxed">
+                  <p className="font-sans text-base lg:text-xl text-blue/70 leading-relaxed">
                     {trap.description}
                   </p>
-                  <p className="font-sans text-lg lg:text-xl font-bold text-rust leading-relaxed">
+                  <p className="font-sans text-base lg:text-lg font-bold text-rust leading-relaxed">
                     {trap.impact}
                   </p>
                 </div>
@@ -52,18 +51,14 @@ export default function HomeTrifecta() {
           </div>
         </div>
       </div>
-      <div className="relative w-full bg-blue py-20">
-        <div className="mx-auto container border-t border-blue/10 text-center">
-          <p className="font-serif capitalize text-2xl lg:text-4xl text-white italic">
-            "Pressure doesn't reveal your{" "}
-            <span className="text-gold font-bold">potential</span>,{" "}
-            <br className="hidden md:block" />
-            it reveals your{" "}
-            <span className="text-gold font-bold">foundation</span>
-            ."
-          </p>
-        </div>
-      </div>
+      <AuthorityQuote
+        lead="Pressure doesn't reveal your"
+        leadEmp="potential"
+        close="it reveals your"
+        closeEmp="foundation"
+        breakLine="xts"
+        padx="px-2 xts:px-0"
+      ></AuthorityQuote>
     </section>
   );
 }

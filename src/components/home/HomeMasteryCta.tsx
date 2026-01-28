@@ -1,16 +1,14 @@
 import React from "react";
+import { SectionHeadline, YinYang } from "../SubComponents";
 
 export default function HomeFinalCTA() {
   return (
     <section className="relative w-full bg-white-soft py-20 lg:py-32 overflow-hidden">
       <div className="mx-auto container px-6 relative z-10">
         <div className="mx-auto max-w-4xl text-center">
-          {/* PRIMARY TITLE: THE FOUNDRY */}
-          <div className="border-b-4 pb-6 mb-4 border-rust inline-block">
-            <h2 className="font-authority text-6xl md:text-8xl lg:text-9xl font-bold text-blue tracking-tighter uppercase">
-              The Foundry
-            </h2>
-          </div>
+          <SectionHeadline classname="section-headline foundry-headline">
+            The Foundry
+          </SectionHeadline>
 
           {/* SUBTITLE: THE INFLECTION POINT SEGUE */}
           <div className="mb-16">
@@ -51,32 +49,13 @@ export default function HomeFinalCTA() {
                 <p className="font-authority font-bold text-rust uppercase tracking-widest mb-10 text-sm lg:text-base">
                   Where do you want to be six months from now?
                 </p>
-
-                <ul className="flex flex-col gap-10">
-                  <li className="flex flex-col gap-2 opacity-40">
-                    <div className="flex justify-between items-baseline">
-                      <span className="font-serif italic text-xl lg:text-3xl">
-                        Still buried in fires?
-                      </span>
-                      <span className="font-sans font-bold text-sm lg:text-lg uppercase">
-                        The Reaction
-                      </span>
-                    </div>
-                    <div className="h-[1px] w-full bg-gradient-to-r from-blue/40 via-blue/10 to-transparent" />
-                  </li>
-
-                  <li className="flex flex-col gap-2">
-                    <div className="flex justify-between items-baseline">
-                      <span className="font-serif italic text-xl lg:text-3xl text-blue font-bold">
-                        Oriented and leading?
-                      </span>
-                      <span className="text-gold font-sans font-black text-sm lg:text-lg uppercase">
-                        The Authority
-                      </span>
-                    </div>
-                    <div className="h-[2px] w-full bg-gradient-to-r from-gold via-gold/40 to-transparent" />
-                  </li>
-                </ul>
+                <YinYang
+                  data={[
+                    { yin: "Still buried in fires?", yang: "The Reaction" },
+                    { yin: "Oriented and leading?", yang: "The Authority" },
+                  ]}
+                  connector=""
+                ></YinYang>
               </div>
 
               {/* INTEGRATED PAYOFF FOOTER */}
