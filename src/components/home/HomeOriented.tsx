@@ -40,7 +40,7 @@ export default function HomeOriented() {
             <div className="flex flex-col gap-12">
               {quotebox.map((item, idx) => (
                 <div key={idx} className="border-l-4 border-gold pl-8">
-                  <h4 className="quotebox-headline">{item.headline}</h4>
+                  <h3 className="quotebox-headline">{item.headline}</h3>
                   <p
                     className="text-base md:text-lg lg:text-xl"
                     dangerouslySetInnerHTML={{ __html: item.text }}
