@@ -2,12 +2,12 @@
 
 import React, { useState, FormEvent } from "react";
 import { sendGAEvent } from "@next/third-parties/google";
+import toast, { Toaster } from "react-hot-toast";
 
 type FormStatus = "idle" | "sending" | "success" | "error";
 
 export default function NewsletterForm() {
   const [status, setStatus] = useState<FormStatus>("idle");
-  const [message, setMessage] = useState("");
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -17,8 +17,7 @@ export default function NewsletterForm() {
 
     // Basic validation
     if (!email || !email.includes("@")) {
-      setStatus("error");
-      setMessage("Please enter a valid email address.");
+      toast.error("Please enter a valid email address.", { id: "news-val" });
       return;
     }
 
@@ -38,22 +37,51 @@ export default function NewsletterForm() {
 
       if (response.ok) {
         setStatus("success");
+        toast.success("Welcome aboard. Check your inbox.", {
+          id: "news-success",
+        });
+
         sendGAEvent("event", "form_submit", {
           form_name: "newsletter",
           category: "engagement",
         });
+
+        // Reset form on success
+        (e.target as HTMLFormElement).reset();
+        setStatus("idle");
       } else {
         setStatus("error");
-        setMessage(data.error || "Something went wrong.");
+        toast.error(data.error || "Something went wrong.", {
+          id: "news-api-error",
+        });
       }
     } catch (error) {
       setStatus("error");
-      setMessage("Connection failed. Please try again.");
+      toast.error("Connection failed. Please try again.", {
+        id: "news-net-error",
+      });
     }
   };
 
   return (
     <div className="w-full">
+      {/* Branded Toaster configuration */}
+      <Toaster
+        position="top-right"
+        toastOptions={{
+          duration: 4000,
+          style: {
+            background: "#1a365d", // Your Blue
+            color: "#fff",
+            border: "1px solid #d4af37", // Your Gold
+            fontSize: "14px",
+            textTransform: "uppercase",
+            letterSpacing: "0.1em",
+            fontWeight: "bold",
+          },
+        }}
+      />
+
       <form
         onSubmit={handleSubmit}
         className="relative flex flex-col sm:flex-row gap-3"
@@ -63,29 +91,17 @@ export default function NewsletterForm() {
           name="email_address"
           required
           placeholder="Enter your email"
-          disabled={status === "success" || status === "sending"}
+          disabled={status === "sending"}
           className="flex-grow bg-white/5 border border-white/10 px-5 py-4 rounded-lg text-white placeholder:text-white/30 focus:outline-none focus:border-gold transition-all"
         />
         <button
           type="submit"
-          disabled={status === "success" || status === "sending"}
+          disabled={status === "sending"}
           className="bg-gold hover:bg-gold/90 text-gray-900 font-bold px-8 py-4 rounded-lg transition-all duration-300 uppercase tracking-widest text-sm disabled:bg-gray-600 disabled:text-gray-300"
         >
           {status === "sending" ? "Processing..." : "Join"}
         </button>
       </form>
-
-      {/* Response Messages */}
-      <div className="mt-4 min-h-[24px]">
-        {status === "error" && (
-          <p className="text-rust font-bold text-sm animate-pulse">{message}</p>
-        )}
-        {status === "success" && (
-          <p className="text-gold font-bold text-sm">
-            Welcome aboard. Check your inbox.
-          </p>
-        )}
-      </div>
     </div>
   );
 }
