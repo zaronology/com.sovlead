@@ -6,7 +6,7 @@ interface InsightsArticleProps {
 
 export default function InsightsArticle({ source }: InsightsArticleProps) {
   return (
-    <article className="w-full bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
+    <article className="w-full bg-white-soft rounded-2xl shadow-sm overflow-hidden">
       <div className="p-6 md:p-12 prose-sovereign lg:text-lg">
         <MDXRemote source={source} />
       </div>

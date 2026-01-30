@@ -23,7 +23,7 @@ export default async function InsightsPage({ slug }: InsightsPageProps) {
   }
 
   return (
-    <section className="w-full bg-gray-50/50 pb-20">
+    <section className="w-full pb-20">
       <div className="container mx-auto px-6">
         <div className="pt-6 mb-6">
           <InsightsBreadcrumbs page={true} title={post.title} />

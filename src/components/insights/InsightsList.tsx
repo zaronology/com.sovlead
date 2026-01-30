@@ -22,7 +22,7 @@ const InsightsList: React.FC<InsightsListProps> = ({ posts }) => {
   const safePosts = Array.isArray(posts) ? posts : [];
 
   return (
-    <section className="relative w-full bg-gray-50 min-h-screen pb-20">
+    <section className="relative w-full min-h-screen pb-20">
       <div className="container mx-auto px-6 pt-10 pb-100">
         <div className="mb-10">
           <InsightsBreadcrumbs page={false} />
@@ -32,7 +32,7 @@ const InsightsList: React.FC<InsightsListProps> = ({ posts }) => {
           {safePosts.map((post) => (
             <article
               key={post.slug}
-              className="group relative flex flex-col h-full bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-xl transition-all duration-300"
+              className="group relative flex flex-col h-full bg-white-soft rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-xl transition-all duration-300"
             >
               {post.coverImage && (
                 <div className="relative aspect-video w-full overflow-hidden">
@@ -45,11 +45,11 @@ const InsightsList: React.FC<InsightsListProps> = ({ posts }) => {
               )}
 
               <div className="p-8 flex flex-col flex-grow">
-                <time className="text-xs font-bold text-gold uppercase tracking-widest mb-3">
+                <time className="text-xs font-bold text-rust uppercase tracking-widest mb-3">
                   {post.date}
                 </time>
 
-                <h2 className="text-2xl font-bold text-gray-900 mb-4 tracking-tight leading-tight">
+                <h2 className="text-2xl font-bold text-blue mb-4 tracking-tight leading-tight">
                   <Link
                     href={`/insights/${post.slug}`}
                     className="hover:text-rust transition-colors outline-none after:absolute after:inset-0"

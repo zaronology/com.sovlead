@@ -6,7 +6,7 @@ const SharpLine = ({ className = "" }: { className?: string }) => (
     viewBox="0 0 24 24"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
-    className={`text-gold ${className}`}
+    className={`text-rust ${className}`}
     aria-hidden="true"
   >
     <path d="M3 12H21" stroke="currentColor" strokeWidth="2.5" />
@@ -20,8 +20,8 @@ export default function LeadershipStats() {
       description: (
         <>
           of execs work without enough rest.{" "}
-          <span className="font-bold text-gold">56%</span> can't get 7–8 hours
-          sleep, and <span className="font-bold text-gold">46%</span> skip
+          <span className="font-bold text-rust">56%</span> can't get 7–8 hours
+          sleep, and <span className="font-bold text-rust">46%</span> skip
           meals.
         </>
       ),
@@ -39,7 +39,7 @@ export default function LeadershipStats() {
       description: (
         <>
           of leaders hit full burnout in 2024.{" "}
-          <span className="font-bold text-gold">70%</span> of execs are ready to
+          <span className="font-bold text-rust">70%</span> of execs are ready to
           quit to save their sanity.
         </>
       ),
@@ -50,7 +50,7 @@ export default function LeadershipStats() {
       description: (
         <>
           execs know burnout kills organizations.{" "}
-          <span className="font-bold text-gold">75%</span> have colleagues who
+          <span className="font-bold text-rust">75%</span> have colleagues who
           already quit.
         </>
       ),
@@ -78,7 +78,7 @@ export default function LeadershipStats() {
               key={index}
               className="bg-white-soft shadow-md text-blue aspect-square flex flex-col justify-center items-center text-center p-8 md:p-6 lg:p-6 rounded-sm border border-gold/10 "
             >
-              <div className="font-authority text-7xl md:text-8xl text-gold font-bold leading-none mb-4">
+              <div className="font-authority text-7xl md:text-8xl text-rust font-bold leading-none mb-4">
                 {point.percentage}
               </div>
               <p className="font-sans text-lg md:text-xl text-blue/90 leading-relaxed max-w-sm mx-auto">

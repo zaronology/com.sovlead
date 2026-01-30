@@ -18,7 +18,7 @@ export default function TheMirage() {
 
             <p className="border-l-4 border-gold pl-8 py-2 bg-blue/[0.02]">
               You're moving,{" "}
-              <b className="text-gold">
+              <b className="text-rust">
                 working hard, putting in the hours, making decisions,
               </b>{" "}
               but you've lost your direction.

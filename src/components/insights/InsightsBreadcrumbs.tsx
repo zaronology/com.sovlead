@@ -13,21 +13,21 @@ const InsightsBreadcrumb: React.FC<InsightsBreadcrumbProps> = ({
   title,
 }) => {
   return (
-    <section className="px-6 py-4 bg-white shadow-sm border border-gray-100 rounded-xl mb-6">
+    <section className="px-6 py-4 bg-white-soft shadow-sm rounded-xl mb-6">
       <nav aria-label="Breadcrumb">
         <ol className="flex items-center space-x-2 text-sm font-medium">
           {/* Home Link */}
           <li>
             <Link
               href="/"
-              className="text-gray-400 hover:text-gold transition-colors duration-200"
+              className="text-blue hover:text-gold transition-colors duration-200"
             >
               Home
             </Link>
           </li>
 
           {/* Separator */}
-          <li className="text-gray-300">
+          <li className="text-blue">
             <svg
               className="w-4 h-4"
               fill="none"
@@ -48,9 +48,7 @@ const InsightsBreadcrumb: React.FC<InsightsBreadcrumbProps> = ({
             <Link
               href="/insights"
               className={`transition-colors duration-200 ${
-                page
-                  ? "text-gray-400 hover:text-gold"
-                  : "text-gray-900 font-bold"
+                page ? "text-rust hover:text-f-rust" : "text-rust font-bold"
               }`}
             >
               Insights
@@ -76,7 +74,7 @@ const InsightsBreadcrumb: React.FC<InsightsBreadcrumbProps> = ({
                 </svg>
               </li>
               <li
-                className="text-gray-900 font-bold truncate max-w-[200px] md:max-w-none"
+                className="text-blue font-bold truncate max-w-[200px] md:max-w-none"
                 aria-current="page"
               >
                 {title}

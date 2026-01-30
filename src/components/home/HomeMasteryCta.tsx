@@ -31,7 +31,7 @@ export default function HomeFinalCTA() {
               <div className="border-l-4 border-gold pl-8">
                 <p>
                   Or learn to{" "}
-                  <b className="text-gold">see clearly and orient.</b> This is
+                  <b className="text-rust">see clearly and orient.</b> This is
                   where that happens.
                 </p>
               </div>
@@ -65,7 +65,7 @@ export default function HomeFinalCTA() {
                   <span className="text-rust font-bold">pressure</span> instead
                   of absorbing it. <br />
                   Leading with{" "}
-                  <span className="text-gold font-bold">clarity</span> and
+                  <span className="text-rust font-bold">clarity</span> and
                   confidence.
                 </p>
               </div>
