@@ -10,6 +10,7 @@ export default function Hero() {
           alt="Dumpster fire"
           fill
           priority
+          fetchPriority="high"
           className="object-cover object-right lg:object-bottom"
         />
         <div className="absolute inset-0 bg-gradient-to-br from-black via-black/20 via-60% to-transparent" />
