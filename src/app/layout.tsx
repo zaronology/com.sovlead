@@ -85,9 +85,11 @@ export default function RootLayout({
       <body className="font-sans bg-white text-blue antialiased text-pure">
         <JsonLd data={organizationJsonLd} />
         <JsonWebLd data={websiteJsonLd} />
-        <Navbar />
-        {children}
-        <Footer />
+        <main id="main-content">
+          <Navbar />
+          {children}
+          <Footer />
+        </main>
         <GoogleAnalytics gaId="G-VV1XDZNCLC" />
       </body>
     </html>
