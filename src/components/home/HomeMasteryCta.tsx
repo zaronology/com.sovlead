@@ -74,7 +74,7 @@ export default function HomeFinalCTA() {
             {/* FINAL ANCHOR CTA */}
             <div className="mt-12 flex justify-center">
               <a
-                href="#apply"
+                href="/the-foundry/application"
                 className="group relative inline-flex items-center justify-center px-12 py-6 font-authority text-2xl font-bold text-white transition-all duration-200 bg-rust hover:bg-rust/90 rounded-sm w-full md:w-auto uppercase tracking-[0.2em]"
               >
                 Enter The Foundry

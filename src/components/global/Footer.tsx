@@ -54,10 +54,10 @@ export default function Footer() {
               />
             </Link>
             <p className="text-sm md:text-base leading-relaxed max-w-sm">
-              Leadership taught you to absorb pressure but never taught you how
-              to release it. We teach you how to orient under pressure by
-              building the decision, boundary, translation, and accountability
-              structure that lets you lead from clarity instead of chaos.
+              Sovereign Leadership is the ability to stay oriented under
+              pressure, see clearly when everything's chaos, hold your direction
+              when urgency pulls you off course, and discharge pressure instead
+              of absorbing it.
             </p>
           </div>
 

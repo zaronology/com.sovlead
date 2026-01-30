@@ -43,9 +43,9 @@ export default function WhyItHappens() {
                 burden of competence
               </h3>
               <p className="font-sans text-base text-blue/90 md:text-lg xl:text-xl leading-relaxed mb-8 max-w-1xl">
-                The more capable you are, the more others rely on you, 
-                narrowing your focus to immediate problems while you lose sight
-                of the full picture.
+                The more capable you are, the more others rely on you, narrowing
+                focus to immediate problems while losing sight of the full
+                picture.
               </p>
 
               <ul className="flex flex-col gap-5">
@@ -64,10 +64,10 @@ export default function WhyItHappens() {
 
             {/* RIGHT BOX: The outcome is on you */}
             <div className="w-full lg:w-1/2 pt-12 pb-0 lg:py-0 lg:pl-16">
-              <h3 className="font-serif text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-semibold text-rust mb-4 capitalize">
+              <h3 className="font-serif text-2xl font-semibold text-rust md:text-3xl lg:text-4xl mb-4 capitalize">
                 The Burden Escalates
               </h3>
-              <p className="font-sans text-base text-blue md:text-lg xl:text-xl 2xl:text-2xl leading-relaxed mb-8">
+              <p className="font-sans text-base text-blue/90 md:text-lg xl:text-xl leading-relaxed mb-8 max-w-1xl">
                 You're caught between needing results yesterday and teams buried
                 in fires. You become the bridge, absorbing pressure from both
                 sides.
