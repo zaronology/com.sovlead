@@ -2,7 +2,7 @@
 
 import React, { useState, FormEvent } from "react";
 import { sendGAEvent } from "@next/third-parties/google";
-import toast, { Toaster } from "react-hot-toast";
+import toast from "react-hot-toast";
 
 type FormStatus = "idle" | "sending" | "success" | "error";
 
@@ -65,23 +65,6 @@ export default function NewsletterForm() {
 
   return (
     <div className="w-full">
-      {/* Branded Toaster configuration */}
-      <Toaster
-        position="top-right"
-        toastOptions={{
-          duration: 4000,
-          style: {
-            background: "#1a365d", // Your Blue
-            color: "#fff",
-            border: "1px solid #d4af37", // Your Gold
-            fontSize: "14px",
-            textTransform: "uppercase",
-            letterSpacing: "0.1em",
-            fontWeight: "bold",
-          },
-        }}
-      />
-
       <form
         onSubmit={handleSubmit}
         className="relative flex flex-col sm:flex-row gap-3"

@@ -1,6 +1,6 @@
 import React, { useState, useEffect, FormEvent, ChangeEvent } from "react";
 import { sendGAEvent } from "@next/third-parties/google";
-import toast, { Toaster } from "react-hot-toast";
+import toast from "react-hot-toast";
 
 const STORAGE_KEY = "foundry_form_backup";
 
@@ -175,18 +175,6 @@ const FoundryApplicationForm: React.FC<FoundryApplicationFormProps> = ({
 
   return (
     <div className="w-full mx-auto px-4 sm:px-6 lg:px-8 py-10">
-      <Toaster
-        position="top-right"
-        toastOptions={{
-          duration: 4000,
-          style: {
-            background: "#1a365d",
-            color: "#fff",
-            border: "1px solid #d4af37",
-          },
-        }}
-      />
-
       <div className="bg-white shadow-lg rounded-xl overflow-hidden border border-gold">
         <div className="px-6 py-8 sm:p-10">
           <form noValidate onSubmit={handleSubmit} className="space-y-8">

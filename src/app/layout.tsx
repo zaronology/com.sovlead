@@ -1,5 +1,6 @@
 import { Inter, Cinzel, Lora } from "next/font/google";
 import { JsonLd, JsonWebLd } from "@/components/global/JsonLd";
+import { Toaster } from "react-hot-toast";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import type { Metadata } from "next";
 import "@/assets/css/globals.css";
@@ -91,6 +92,17 @@ export default function RootLayout({
           <Footer />
         </main>
         <GoogleAnalytics gaId="G-VV1XDZNCLC" />
+        <Toaster
+          position="top-right"
+          toastOptions={{
+            duration: 4000,
+            style: {
+              background: "#1a365d",
+              color: "#fff",
+              border: "1px solid #d4af37",
+            },
+          }}
+        />
       </body>
     </html>
   );
