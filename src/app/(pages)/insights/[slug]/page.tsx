@@ -51,7 +51,7 @@ const Page = async ({ params }: PageProps) => {
   }
 
   return (
-    <main className="bg-white">
+    <>
       <InsightsPageHero
         title={postData.title}
         exerpt={postData.excerpt}
@@ -59,7 +59,7 @@ const Page = async ({ params }: PageProps) => {
       />
       <InsightsPage slug={slug} />
       <Newsletter />
-    </main>
+    </>
   );
 };
 
